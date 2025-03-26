@@ -62,7 +62,7 @@ jobs:
               uses: cssnr/portainer-stack-deploy-action@v1
               with:
                   url: ${{ secrets.PORTAINER_URL }}
-                  token: ${{ secrets.PORTAINER_TOKEN }}
+                  token: ${{ secrets.PORTAINER_KEY }}
                   name: md2html
                   # file: on pourrait spécifier un compose file si besoin, sinon il réutilise celui du stack existant
                   prune: true   # Supprime les services qui ne sont pas dans le fichier de stack
