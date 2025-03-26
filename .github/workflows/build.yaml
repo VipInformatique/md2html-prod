@@ -58,9 +58,6 @@ jobs:
                   cache-from: type=gha
                   cache-to: type=gha,mode=max
 
-            - name: Initialize Docker Swarm
-              run: docker swarm init || true
-
             - name: Déployer le stack via Portainer
               uses: cssnr/portainer-stack-deploy-action@v1
               with:
